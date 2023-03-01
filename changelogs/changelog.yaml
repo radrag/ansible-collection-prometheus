@@ -12,7 +12,12 @@ releases:
         - 'test: permission debug (https://github.com/radrag/ansible-collection-prometheus/pull/13)'
         - 'test: permissions (https://github.com/radrag/ansible-collection-prometheus/pull/11)'
         - 'test: release trigger (https://github.com/radrag/ansible-collection-prometheus/pull/12)'
+        - 'test: trigger (https://github.com/radrag/ansible-collection-prometheus/pull/16)'
         - 'test: trigger release (https://github.com/radrag/ansible-collection-prometheus/pull/14)'
         - 'test: write permissions (https://github.com/radrag/ansible-collection-prometheus/pull/9)'
-        - 'test: trigger (https://github.com/radrag/ansible-collection-prometheus/pull/16)'
+    release_date: '2023-03-01'
+  0.0.3:
+    changes:
+      bugfixes:
+        - 'fix: trigger release (https://github.com/radrag/ansible-collection-prometheus/pull/17)'
     release_date: '2023-03-01'
