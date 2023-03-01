@@ -6,7 +6,9 @@ on:
       - main
   pull_request:
     types:
-      - '!closed'
+      - opened
+      - edited
+      - reopened
   workflow_dispatch:
 
 env:
