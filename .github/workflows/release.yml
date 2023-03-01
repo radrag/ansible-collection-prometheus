@@ -5,7 +5,6 @@ on:
     types:
       - closed
 
-
 jobs:
   release:
     if: |
@@ -29,10 +28,10 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: "Generate new version in changelog.yaml"
-        run: antsibull-changelog release -v --version "${{ steps.version.outputs.next-version }}"
+        run: antsibull-changelog release --update-existing -v --version "${{ steps.version.outputs.next-version }}"
 
       - name: "Run antsichaut"
-        uses: rndmh3ro/antsichaut-action@main
+        uses: gardar/antsichaut-action@latest
         with:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           since_version: "${{ steps.version.outputs.current-version }}"
