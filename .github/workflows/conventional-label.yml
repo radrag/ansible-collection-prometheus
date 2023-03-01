@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Confirm correct pull request title"
-        uses: mmubeen/action-pr-title@master  # until PR https://github.com/deepakputhraya/action-pr-title/pull/29
+        uses: mmubeen/action-pr-title@master  # until PR gets merged https://github.com/deepakputhraya/action-pr-title/pull/29
         with:
           allowed_prefixes: 'feat,feature,fix,major,breaking,minor,enhancement,deprecated,removed,security,bug,bugfix,docs,packaging,test,refactor,refactoring,skip-release,skip_changelog'
 
