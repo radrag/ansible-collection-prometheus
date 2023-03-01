@@ -1,16 +1,18 @@
+---
 ancestor:
 releases:
   0.0.1:
     changes:
       major_changes:
-      - Initial Release
+        - Initial Release
     release_date: '2023-02-17'
   0.0.2:
     changes:
       trivial:
-      - 'test: permission debug (https://github.com/radrag/ansible-collection-prometheus/pull/13)'
-      - 'test: permissions (https://github.com/radrag/ansible-collection-prometheus/pull/11)'
-      - 'test: release trigger (https://github.com/radrag/ansible-collection-prometheus/pull/12)'
-      - 'test: write permissions (https://github.com/radrag/ansible-collection-prometheus/pull/9)'
-      - 'test: trigger release (https://github.com/radrag/ansible-collection-prometheus/pull/14)'
+        - 'test: permission debug (https://github.com/radrag/ansible-collection-prometheus/pull/13)'
+        - 'test: permissions (https://github.com/radrag/ansible-collection-prometheus/pull/11)'
+        - 'test: release trigger (https://github.com/radrag/ansible-collection-prometheus/pull/12)'
+        - 'test: trigger release (https://github.com/radrag/ansible-collection-prometheus/pull/14)'
+        - 'test: write permissions (https://github.com/radrag/ansible-collection-prometheus/pull/9)'
+        - 'test: trigger (https://github.com/radrag/ansible-collection-prometheus/pull/16)'
     release_date: '2023-03-01'
