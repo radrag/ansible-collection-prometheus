@@ -51,8 +51,6 @@ jobs:
     if: github.event.pull_request.labels.length == 0
     steps:
       - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Get changed roles
         id: changed-roles
@@ -64,6 +62,7 @@ jobs:
           dir_names: "true"
           dir_names_max_depth: "1"
           since_last_remote_commit: "true"
+          sha: ${{ github.event.pull_request.head.sha }}
 
       - name: Add changed roles labels
         uses: actions/github-script@v6
