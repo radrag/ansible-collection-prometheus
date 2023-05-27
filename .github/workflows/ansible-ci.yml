@@ -40,7 +40,7 @@ jobs:
         id: supported-ansible-versions
         run: |
           echo "result=$(python ./.github/scripts/collection_version_parser.py)"
-          echo "result=$(python ./.github/scripts/collection_version_parser.py)" >> $GITHUB_ENV
+          echo "result=$(python ./.github/scripts/collection_version_parser.py)" >> $GITHUB_OUTPUT
 
   debug:
     runs-on: ubuntu-latest
